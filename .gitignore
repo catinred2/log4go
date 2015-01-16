@@ -1,2 +1,4 @@
 .tags
 .tags_sorted_by_file
+*.sw[op]
+.DS_Store
