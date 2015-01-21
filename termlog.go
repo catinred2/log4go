@@ -26,10 +26,11 @@ func NewConsoleLogWriter() *ConsoleLogWriter {
 	go consoleWriter.run(stdout)
 	return consoleWriter
 }
-func (c *ConsoleLogWriter) SetFormat(format string) {
+func (c *ConsoleLogWriter) SetFormat(format string) *ConsoleLogWriter {
 	c.format = format
+	return c
 }
-func (c ConsoleLogWriter) run(out io.Writer) {
+func (c *ConsoleLogWriter) run(out io.Writer) {
 	for rec := range c.w {
 		fmt.Fprint(out, FormatLogRecord(c.format, rec))
 	}
