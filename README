@@ -1,12 +1,9 @@
-Please see http://log4go.googlecode.com/
+This  repo is forked from [here](https://github.com/alecthomas/log4go).
 
 Installation:
-- Run `goinstall log4go.googlecode.com/hg`
+- Run `go get github.com/catinred2/log4go`
 
 Usage:
 - Add the following import:
-import l4g "log4go.googlecode.com/hg"
+import l4g "github.com/catinred2/log4go"
 
-Acknowledgements:
-- pomack
-  For providing awesome patches to bring log4go up to the latest Go spec
